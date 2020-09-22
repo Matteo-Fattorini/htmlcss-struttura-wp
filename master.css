@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("img/background.jpg");
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+header {
+  border: 5px solid white;
+  border-radius: 5px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  background-image: url("img/natural-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+nav {
+  width: 100%;
+  background-color: grey;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+nav a {
+  margin: 0 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+main .row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main .row .col {
+  float: left;
+}
+
+main .col.small {
+  width: 15%;
+}
+
+main .col.large {
+  width: 60%;
+  margin: 0px 5%;
+}
+
+main .box {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+main .small img {
+  height: 30px;
+  float: left;
+  margin-right: 5px;
+}
+
+main .small a {
+  margin: 10px 0;
+  display: block;
+  color: #41a127;
+  text-decoration: none;
+}
+
+main .small a:hover,
+main .small img:hover,
+footer img:hover,
+main h1:hover {
+  cursor: pointer;
+}
+
+main .large .box {
+  text-align: center;
+}
+
+.ln {
+  line-height: 30px;
+}
+
+main .large .box h1,
+main .small .box h1 {
+  margin-bottom: 20px;
+}
+
+main .small .box {
+  margin-bottom: 50px;
+}
+
+footer {
+  font-style: italic;
+  color: grey;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+footer img {
+  height: 50px;
+  float: left;
+  margin: 10px 15% 0px 14%;
+}
